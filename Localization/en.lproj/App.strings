@@ -1,0 +1,7 @@
+"configuration.title" = "Can't reach the service";
+"configuration.fallback" = "The connection isn't fully configured. Check the app settings and try again.";
+"workspace.title" = "Can't reach your data";
+"workspace.retry" = "Try again";
+"callback.title" = "Couldn't open that link";
+"callback.ok" = "OK";
+"callback.fallback" = "Please try again.";

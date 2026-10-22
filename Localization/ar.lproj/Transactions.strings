@@ -1,0 +1,11 @@
+"field.merchant" = "المتجر أو الوصف";
+"field.merchant_placeholder" = "مثال: متجر الحي";
+"field.transfer_placeholder" = "وصف التحويل";
+"field.date" = "التاريخ";
+"field.note" = "ملاحظة (اختياري)";
+"field.note_placeholder" = "أضف ما تريد تذكّره";
+"field.category" = "التصنيف";
+"field.to_account" = "إلى حساب";
+"field.from_account" = "من حساب";
+"form.add" = "إضافة %@";
+"form.edit" = "تعديل %@";

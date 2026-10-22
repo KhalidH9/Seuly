@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000001 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = A00000000000000000000002 /* Supabase */; };
+		B00000000000000000000001 /* App.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000031 /* App.strings */; };
+		B00000000000000000000002 /* Auth.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000032 /* Auth.strings */; };
+		B00000000000000000000003 /* Onboarding.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000033 /* Onboarding.strings */; };
+		B00000000000000000000004 /* Dashboard.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000034 /* Dashboard.strings */; };
+		B00000000000000000000005 /* Activity.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000035 /* Activity.strings */; };
+		B00000000000000000000006 /* Transactions.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000036 /* Transactions.strings */; };
+		B00000000000000000000007 /* Planning.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000037 /* Planning.strings */; };
+		B00000000000000000000008 /* Insights.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000038 /* Insights.strings */; };
+		B00000000000000000000009 /* Settings.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000039 /* Settings.strings */; };
+		B0000000000000000000000A /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003A /* Shared.strings */; };
+		B0000000000000000000000B /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003B /* Errors.strings */; };
+		B0000000000000000000000C /* Data.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003C /* Data.strings */; };
+		B0000000000000000000000D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003D /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000005;
+			remoteInfo = Seuly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000006 /* Seuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000007 /* SeulyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeulyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000011 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/App.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000012 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Auth.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000013 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Onboarding.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000014 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Dashboard.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000015 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Activity.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000016 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Transactions.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000017 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Planning.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000018 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Insights.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000019 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Settings.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000001A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Shared.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000001B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Errors.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000001C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Data.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000001D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000021 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/App.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000022 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Auth.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000023 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Onboarding.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000024 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Dashboard.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000025 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Activity.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Transactions.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000027 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Planning.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000028 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Insights.strings; sourceTree = SOURCE_ROOT; };
+		B00000000000000000000029 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Settings.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000002A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Shared.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000002B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Errors.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000002C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Data.strings; sourceTree = SOURCE_ROOT; };
+		B0000000000000000000002D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A0000000000000000000001E /* Exceptions for "Seuly" folder in "Seuly" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Support/Info.plist,
+				Support/SupabaseSecrets.plist.example,
+			);
+			target = A00000000000000000000005 /* Seuly */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A00000000000000000000008 /* Seuly */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0000000000000000000001E /* Exceptions for "Seuly" folder in "Seuly" target */,
+			);
+			path = Seuly;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000009 /* SeulyTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SeulyTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0000000000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000001 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000000000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0000000000000000000000C = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000008 /* Seuly */,
+				A00000000000000000000009 /* SeulyTests */,
+				B00000000000000000000040 /* Localization Resources */,
+				A0000000000000000000000D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000006 /* Seuly.app */,
+				A00000000000000000000007 /* SeulyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000040 /* Localization Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000031 /* App.strings */,
+				B00000000000000000000032 /* Auth.strings */,
+				B00000000000000000000033 /* Onboarding.strings */,
+				B00000000000000000000034 /* Dashboard.strings */,
+				B00000000000000000000035 /* Activity.strings */,
+				B00000000000000000000036 /* Transactions.strings */,
+				B00000000000000000000037 /* Planning.strings */,
+				B00000000000000000000038 /* Insights.strings */,
+				B00000000000000000000039 /* Settings.strings */,
+				B0000000000000000000003A /* Shared.strings */,
+				B0000000000000000000003B /* Errors.strings */,
+				B0000000000000000000003C /* Data.strings */,
+				B0000000000000000000003D /* InfoPlist.strings */,
+			);
+			name = "Localization Resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000005 /* Seuly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000000000000000000000E /* Build configuration list for PBXNativeTarget "Seuly" */;
+			buildPhases = (
+				A0000000000000000000000F /* Sources */,
+				A0000000000000000000000A /* Frameworks */,
+				A00000000000000000000010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A00000000000000000000008 /* Seuly */,
+			);
+			name = Seuly;
+			packageProductDependencies = (
+				A00000000000000000000002 /* Supabase */,
+			);
+			productName = Seuly;
+			productReference = A00000000000000000000006 /* Seuly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000011 /* SeulyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000012 /* Build configuration list for PBXNativeTarget "SeulyTests" */;
+			buildPhases = (
+				A00000000000000000000013 /* Sources */,
+				A0000000000000000000000B /* Frameworks */,
+				A00000000000000000000014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000015 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A00000000000000000000009 /* SeulyTests */,
+			);
+			name = SeulyTests;
+			productName = SeulyTests;
+			productReference = A00000000000000000000007 /* SeulyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A00000000000000000000005 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					A00000000000000000000011 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = A00000000000000000000005;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000016 /* Build configuration list for PBXProject "Seuly" */;
+			developmentRegion = ar;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ar,
+				en,
+				Base,
+			);
+			mainGroup = A0000000000000000000000C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A00000000000000000000017 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A0000000000000000000000D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000005 /* Seuly */,
+				A00000000000000000000011 /* SeulyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* App.strings in Resources */,
+				B00000000000000000000002 /* Auth.strings in Resources */,
+				B00000000000000000000003 /* Onboarding.strings in Resources */,
+				B00000000000000000000004 /* Dashboard.strings in Resources */,
+				B00000000000000000000005 /* Activity.strings in Resources */,
+				B00000000000000000000006 /* Transactions.strings in Resources */,
+				B00000000000000000000007 /* Planning.strings in Resources */,
+				B00000000000000000000008 /* Insights.strings in Resources */,
+				B00000000000000000000009 /* Settings.strings in Resources */,
+				B0000000000000000000000A /* Shared.strings in Resources */,
+				B0000000000000000000000B /* Errors.strings in Resources */,
+				B0000000000000000000000C /* Data.strings in Resources */,
+				B0000000000000000000000D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0000000000000000000000F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A00000000000000000000015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000005 /* Seuly */;
+			targetProxy = A00000000000000000000003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B00000000000000000000031 /* App.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000011 /* ar */,
+				B00000000000000000000021 /* en */,
+			);
+			name = App.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000032 /* Auth.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000012 /* ar */,
+				B00000000000000000000022 /* en */,
+			);
+			name = Auth.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000033 /* Onboarding.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000013 /* ar */,
+				B00000000000000000000023 /* en */,
+			);
+			name = Onboarding.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000034 /* Dashboard.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000014 /* ar */,
+				B00000000000000000000024 /* en */,
+			);
+			name = Dashboard.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000035 /* Activity.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000015 /* ar */,
+				B00000000000000000000025 /* en */,
+			);
+			name = Activity.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000036 /* Transactions.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000016 /* ar */,
+				B00000000000000000000026 /* en */,
+			);
+			name = Transactions.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000037 /* Planning.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000017 /* ar */,
+				B00000000000000000000027 /* en */,
+			);
+			name = Planning.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000038 /* Insights.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000018 /* ar */,
+				B00000000000000000000028 /* en */,
+			);
+			name = Insights.strings;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000039 /* Settings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00000000000000000000019 /* ar */,
+				B00000000000000000000029 /* en */,
+			);
+			name = Settings.strings;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000003A /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0000000000000000000001A /* ar */,
+				B0000000000000000000002A /* en */,
+			);
+			name = Shared.strings;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000003B /* Errors.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0000000000000000000001B /* ar */,
+				B0000000000000000000002B /* en */,
+			);
+			name = Errors.strings;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000003C /* Data.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0000000000000000000001C /* ar */,
+				B0000000000000000000002C /* en */,
+			);
+			name = Data.strings;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000003D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0000000000000000000001D /* ar */,
+				B0000000000000000000002D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000000000000000000019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0000000000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Seuly/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seuly.finance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0000000000000000000001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Seuly/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seuly.finance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0000000000000000000001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seuly.finance.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seuly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Seuly";
+			};
+			name = Debug;
+		};
+		A0000000000000000000001D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seuly.finance.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seuly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Seuly";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0000000000000000000000E /* Build configuration list for PBXNativeTarget "Seuly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000001A /* Debug */,
+				A0000000000000000000001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000012 /* Build configuration list for PBXNativeTarget "SeulyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000001C /* Debug */,
+				A0000000000000000000001D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000016 /* Build configuration list for PBXProject "Seuly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000018 /* Debug */,
+				A00000000000000000000019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00000000000000000000017 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.54.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00000000000000000000002 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A00000000000000000000004 /* Project object */;
+}

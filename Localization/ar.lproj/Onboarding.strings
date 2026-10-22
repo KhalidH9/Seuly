@@ -1,0 +1,42 @@
+"progress" = "الخطوة %1$ld من %2$ld";
+"action.back" = "السابق";
+"action.continue" = "متابعة";
+"action.finish" = "ابدأ مع سيولي";
+
+"welcome.title" = "أهلًا بك في سيولي";
+"welcome.message" = "ثلاث خطوات قصيرة، وتصبح صورتك المالية أمامك بوضوح.";
+"welcome.action" = "لنبدأ";
+"welcome.footnote" = "يمكنك تعديل كل هذه الإعدادات لاحقًا.";
+"welcome.feature.safe.title" = "اعرف المتاح للإنفاق";
+"welcome.feature.safe.message" = "مبلغ واحد واضح بعد خصم ميزانياتك وفواتيرك المخطط لها.";
+"welcome.feature.upcoming.title" = "لا تفاجئك الالتزامات";
+"welcome.feature.upcoming.message" = "العمليات المتكررة تظهر قبل موعدها، لا بعد خصمها.";
+"welcome.feature.privacy.title" = "أرقامك تحت سيطرتك";
+"welcome.feature.privacy.message" = "أخفِ كل المبالغ بلمسة واحدة عند الحاجة.";
+
+"identity.eyebrow" = "إعدادك الشخصي";
+"identity.title" = "لنتعرّف عليك";
+"identity.message" = "اختر الاسم الذي نناديك به، وحدّد عملتك الأساسية لتظهر المبالغ بالشكل الذي تتوقعه.";
+"identity.name.label" = "كيف تحب أن نناديك؟";
+"identity.name.placeholder" = "اسمك";
+"identity.currency.label" = "العملة الأساسية";
+"identity.currency.option" = "%2$@ (%1$@)";
+"identity.currency.help" = "تُعرض جميع الأرصدة والتحليلات بهذه العملة.";
+
+"account.eyebrow" = "حسابك الأول";
+"account.title" = "أضف الحساب الذي تستخدمه أكثر";
+"account.message" = "ابدأ بالحساب الأكثر استخدامًا، ويمكنك إضافة بقية حساباتك في أي وقت.";
+"account.name.label" = "اسم الحساب";
+"account.name.placeholder" = "مثال: الحساب اليومي";
+"account.type.label" = "نوع الحساب";
+"account.balance.current" = "الرصيد الحالي";
+"account.balance.owed" = "المبلغ المستحق حاليًا";
+"account.balance.current_help" = "أدخل الرصيد الحالي كما يظهر في حسابك اليوم.";
+"account.balance.owed_help" = "أدخل المبلغ المستحق عليك حاليًا في هذا الحساب.";
+
+"plan.eyebrow" = "خطوة بسيطة";
+"plan.title" = "ضع حدًا مرنًا للإنفاق";
+"plan.message" = "اختر تصنيفًا وحدًا شهريًا لتعرف وتيرة إنفاقك من اليوم الأول، بلا تعقيد ولا قيود صارمة.";
+"plan.limit.label" = "الحد الشهري";
+"plan.category.label" = "تصنيف المصروفات";
+"plan.optional_budget.help" = "إن كنت تفضّل إعداد ميزانيتك لاحقًا، فاترك المبلغ فارغًا.";

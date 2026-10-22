@@ -1,0 +1,11 @@
+"field.merchant" = "Merchant or description";
+"field.merchant_placeholder" = "e.g. Corner store";
+"field.transfer_placeholder" = "Transfer description";
+"field.date" = "Date";
+"field.note" = "Note (optional)";
+"field.note_placeholder" = "Anything worth remembering";
+"field.category" = "Category";
+"field.to_account" = "To account";
+"field.from_account" = "From account";
+"form.add" = "Add %@";
+"form.edit" = "Edit %@";

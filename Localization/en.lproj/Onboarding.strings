@@ -1,0 +1,42 @@
+"progress" = "Step %1$ld of %2$ld";
+"action.back" = "Back";
+"action.continue" = "Continue";
+"action.finish" = "Start using Seuly";
+
+"welcome.title" = "Welcome to Seuly";
+"welcome.message" = "Three short steps, and your financial picture is in front of you.";
+"welcome.action" = "Get started";
+"welcome.footnote" = "You can change any of this later.";
+"welcome.feature.safe.title" = "Know what's safe to spend";
+"welcome.feature.safe.message" = "One clear figure, after your budgets and planned bills are set aside.";
+"welcome.feature.upcoming.title" = "No surprise bills";
+"welcome.feature.upcoming.message" = "Recurring charges show up before they're due, not after.";
+"welcome.feature.privacy.title" = "Your numbers, your call";
+"welcome.feature.privacy.message" = "Hide every amount with a single tap when you need to.";
+
+"identity.eyebrow" = "YOUR SETUP";
+"identity.title" = "Let's get acquainted";
+"identity.message" = "Choose the name we'll call you, and set your base currency so amounts appear the way you expect.";
+"identity.name.label" = "What should we call you?";
+"identity.name.placeholder" = "Your name";
+"identity.currency.label" = "Base currency";
+"identity.currency.option" = "%2$@ (%1$@)";
+"identity.currency.help" = "All balances and insights are shown in this currency.";
+
+"account.eyebrow" = "YOUR FIRST ACCOUNT";
+"account.title" = "Add the account you use most";
+"account.message" = "Start with the one you use most often — you can add the rest any time.";
+"account.name.label" = "Account name";
+"account.name.placeholder" = "e.g. Everyday account";
+"account.type.label" = "Account type";
+"account.balance.current" = "Current balance";
+"account.balance.owed" = "Amount currently owed";
+"account.balance.current_help" = "Enter the balance as it shows in your account today.";
+"account.balance.owed_help" = "Enter the amount you currently owe on this account.";
+
+"plan.eyebrow" = "ONE SIMPLE STEP";
+"plan.title" = "Set a flexible spending limit";
+"plan.message" = "Pick a category and a monthly limit so you know your pace from day one — no rigid rules.";
+"plan.limit.label" = "Monthly limit";
+"plan.category.label" = "Spending category";
+"plan.optional_budget.help" = "Prefer to set your budget later? Leave the amount empty.";

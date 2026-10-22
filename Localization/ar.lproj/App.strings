@@ -1,0 +1,7 @@
+"configuration.title" = "تعذّر الاتصال بالخدمة";
+"configuration.fallback" = "إعداد الاتصال غير مكتمل. تحقّق من إعدادات التطبيق ثم أعد المحاولة.";
+"workspace.title" = "تعذّر الوصول إلى بياناتك";
+"workspace.retry" = "إعادة المحاولة";
+"callback.title" = "تعذّر فتح الرابط";
+"callback.ok" = "حسنًا";
+"callback.fallback" = "حاول مرة أخرى.";

@@ -1,0 +1,31 @@
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Xcode
+DerivedData/
+build/
+*.xcarchive
+*.xcresult
+*.ipa
+*.xcuserstate
+xcuserdata/
+
+# Local Supabase credentials
+Seuly/Support/SupabaseSecrets.plist
+.env
+.env.*
+!.env.example
+supabase/.branches/
+supabase/.temp/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Signing material
+*.cer
+*.mobileprovision
+*.p12
+*.p8

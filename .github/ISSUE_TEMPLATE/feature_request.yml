@@ -1,0 +1,58 @@
+name: Feature request
+description: Propose a user problem or focused improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start with the user problem, not a chosen implementation. Keep the
+        proposal focused enough to review in one issue.
+  - type: checkboxes
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and the roadmap.
+          required: true
+        - label: This request does not require weakening privacy or data isolation.
+          required: true
+  - type: textarea
+    attributes:
+      label: Problem
+      description: Who has this problem, in what context, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed outcome
+      description: Describe the successful user experience without prescribing architecture.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Area
+      options:
+        - Accounts and transactions
+        - Budgets, goals, or recurring plans
+        - Dashboard, insights, or search
+        - Authentication and onboarding
+        - Arabic, English, accessibility, or design
+        - Supabase database and security
+        - Developer experience and documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Privacy, security, and localization impact
+      description: Note data collected, permissions, schema changes, and Arabic/English work.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context

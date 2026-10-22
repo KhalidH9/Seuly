@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: macos-26
+    timeout-minutes: 45
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+      DERIVED_DATA: ${{ runner.temp }}/SeulyDerivedData
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Validate repository rules
+        shell: bash
+        run: |
+          set -euo pipefail
+          test ! -f Seuly/Support/SupabaseSecrets.plist
+          test -L supabase/migrations
+          test "$(readlink supabase/migrations)" = "../Migrations"
+          failures=0
+          while IFS= read -r file; do
+            lines=$(wc -l < "$file" | tr -d ' ')
+            if (( lines > 100 )); then
+              echo "::error file=$file::$lines lines (maximum 100)"
+              failures=1
+            fi
+          done < <(find . -type f -not -path './.git/*' \
+            \( -name '*.swift' -o -name '*.sql' -o -name '*.strings' \
+            -o -name '*.md' -o -name '*.yml' -o -name '*.yaml' \
+            -o -name '*.toml' \) | sort)
+          while IFS= read -r file; do
+            count=$(grep -Ec '^[[:space:]]*(private )?struct .*: View' "$file" || true)
+            if [[ "$count" -ne 1 ]]; then
+              echo "::error file=$file::expected one View struct, found $count"
+              failures=1
+            fi
+          done < <(find Seuly/Views -type f -name '*.swift' | sort)
+          if grep -REn '^[[:space:]]*import[[:space:]]+Supabase([^[:alnum:]_]|$)|(^|[^[:alnum:]_])SupabaseClient([^[:alnum:]_]|$)' \
+            Seuly/Views Seuly/ViewModels; then
+            echo "::error::Views and ViewModels must not access Supabase"
+            failures=1
+          fi
+          (( failures == 0 ))
+
+      - name: Validate resources and migrations
+        shell: bash
+        run: |
+          set -euo pipefail
+          plutil -lint Seuly/Support/Info.plist Seuly/Resources/PrivacyInfo.xcprivacy
+          find Localization -type f -name '*.strings' -print0 \
+            | xargs -0 -n 1 plutil -lint
+          test "$(find Migrations -maxdepth 1 -name '[0-9]*_*.sql' | wc -l | tr -d ' ')" -eq 34
+          while IFS= read -r file; do
+            name=${file#Migrations/}
+            if [[ ! "$name" =~ ^[0-9]{14}_[a-z0-9_]+\.sql$ ]]; then
+              echo "Invalid migration: $name"
+              exit 1
+            fi
+          done < <(find Migrations -maxdepth 1 -name '*.sql' -print | sort)
+
+      - name: Resolve packages
+        run: xcodebuild -resolvePackageDependencies -project Seuly.xcodeproj
+
+      - name: Build Debug
+        run: |
+          xcodebuild -project Seuly.xcodeproj -scheme Seuly \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$DERIVED_DATA" build
+
+      - name: Run unit tests
+        run: |
+          xcodebuild -project Seuly.xcodeproj -scheme Seuly \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=latest' \
+            -derivedDataPath "$DERIVED_DATA" \
+            -parallel-testing-enabled NO test
+
+      - name: Build unsigned Release
+        run: |
+          xcodebuild -project Seuly.xcodeproj -scheme Seuly \
+            -configuration Release -destination 'generic/platform=iOS' \
+            -derivedDataPath "$DERIVED_DATA" \
+            CODE_SIGNING_ALLOWED=NO build
