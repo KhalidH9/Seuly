@@ -72,16 +72,16 @@ jobs:
       - name: Resolve packages
         run: xcodebuild -resolvePackageDependencies -project Seuly.xcodeproj
 
-      - name: Build Debug
-        run: |
-          xcodebuild -project Seuly.xcodeproj -scheme Seuly \
-            -destination 'generic/platform=iOS Simulator' \
-            -derivedDataPath "$RUNNER_TEMP/SeulyDerivedData" build
-
       - name: Run unit tests
         run: |
+          simulator_id=$(xcrun simctl list devices available -j \
+            | jq -r '.devices["com.apple.CoreSimulator.SimRuntime.iOS-26-5"][] | select(.name == "iPhone 17 Pro") | .udid' \
+            | head -n 1)
+          test -n "$simulator_id"
+          xcrun simctl boot "$simulator_id" || true
+          xcrun simctl bootstatus "$simulator_id" -b
           xcodebuild -project Seuly.xcodeproj -scheme Seuly \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=latest' \
+            -destination "platform=iOS Simulator,id=$simulator_id" \
             -derivedDataPath "$RUNNER_TEMP/SeulyDerivedData" \
             -parallel-testing-enabled NO test
 
