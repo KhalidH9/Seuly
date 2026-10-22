@@ -18,7 +18,6 @@ jobs:
     timeout-minutes: 45
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
-      DERIVED_DATA: ${{ runner.temp }}/SeulyDerivedData
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
@@ -77,18 +76,18 @@ jobs:
         run: |
           xcodebuild -project Seuly.xcodeproj -scheme Seuly \
             -destination 'generic/platform=iOS Simulator' \
-            -derivedDataPath "$DERIVED_DATA" build
+            -derivedDataPath "$RUNNER_TEMP/SeulyDerivedData" build
 
       - name: Run unit tests
         run: |
           xcodebuild -project Seuly.xcodeproj -scheme Seuly \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=latest' \
-            -derivedDataPath "$DERIVED_DATA" \
+            -derivedDataPath "$RUNNER_TEMP/SeulyDerivedData" \
             -parallel-testing-enabled NO test
 
       - name: Build unsigned Release
         run: |
           xcodebuild -project Seuly.xcodeproj -scheme Seuly \
             -configuration Release -destination 'generic/platform=iOS' \
-            -derivedDataPath "$DERIVED_DATA" \
+            -derivedDataPath "$RUNNER_TEMP/SeulyDerivedData" \
             CODE_SIGNING_ALLOWED=NO build
